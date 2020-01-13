@@ -10,6 +10,7 @@ body {
 }
 
 fieldset {
+    padding: 0;
     max-width: 700px;
     margin: 5% auto;
     border-radius: 4px;
@@ -18,6 +19,7 @@ fieldset {
 }
 
 legend {
+    margin-left: 10px;
     padding: 0 5px;
     font-size: 20px;
 }
@@ -39,7 +41,7 @@ a:hover {
 
 header {
     border-bottom: 1px solid #ccc;
-    padding-bottom: 10px;
+    padding: 5px 10px;
 }
 
 header #menu,
@@ -51,7 +53,8 @@ header #search {
 }
 
 header #menu {
-    width: 590px;
+    float: left;
+    /* width: 590px; */
     min-height: 25px;
     overflow: scroll;
     overflow-y: hidden !important;
@@ -60,7 +63,8 @@ header #menu {
 }
 
 header #search {
-    width: 13%;
+    float: right;
+    /* width: 13%; */
     margin-left: 10px;
     border-left: 4px solid #ccc;
 }
@@ -84,10 +88,17 @@ a:hover {
     height: 15px;
 }
 
+section#content {
+    padding: 0 10px;
+}
+
 section#content .list {
-    margin-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px 0;
     border-bottom: 0.5px solid #e6e6e6;
+}
+
+section#content .list:last-child {
+    border: 0;
 }
 
 .list h3 {
@@ -113,9 +124,19 @@ a.link:hover {
 }
 
 footer {
-    padding-top: 5px;
+    padding: 5px;
     border-top: 1px solid #ccc;
     font-size: small;
+}
+
+.clearfix {
+    clear: both;
+}
+
+@media only screen and (min-width: 768px) {
+    header #search {
+        border-left: 0;
+    }
 }
 
 @media only screen and (min-width: 640px) and (max-width: 767px) {
@@ -164,12 +185,14 @@ footer {
     }
 
     header #menu {
-        width: 235px;
+        /* width: 235px; */
+        width: 82%;
     }
 
     header #search {
+        /* width: 45px; */
+        margin-top: 2px;
         margin-left: 5px;
-        width: 45px;
         height: 27px;
     }
 
@@ -184,7 +207,7 @@ footer {
     }
 
     fieldset {
-        padding: 5px;
+        /* padding: 5px; */
         width: 95%;
     }
 }
@@ -193,7 +216,7 @@ footer {
     @supports (-webkit-appearance: none) {
         header #menu {
             float: left;
-            padding-top: 2px;
+            margin-top: 2px;
         }
     }
 }
