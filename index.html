@@ -18,10 +18,8 @@
         }
 
         fieldset {
-            /* width: 60%; */
             max-width: 700px;
             margin: 5% auto;
-            /* margin-top: 30px; */
             border-radius: 4px;
             border-color: #888;
             border-style: solid;
@@ -31,12 +29,6 @@
             padding: 0 5px;
             font-size: 20px;
         }
-
-        /* hr {
-            margin: 0.75em 0;
-            border: 1px solid #ccc;
-            border-top: 0;
-        } */
 
         input {
             border: 1px solid #ccc;
@@ -79,22 +71,18 @@
             width: 13%;
             margin-left: 10px;
             border-left: 4px solid #ccc;
-            /* top: -9px; */
         }
 
         #menu a {
             border: 1px solid #ccc;
             border-radius: 5px;
             padding: 3px 10px;
-            /* color: #333; */
-            /* text-decoration: none; */
             position: relative;
             top: 2px;
         }
 
         #menu a:hover,
         a:hover {
-            /* text-decoration: underline; */
             border-color: #aaa;
         }
 
@@ -104,19 +92,15 @@
             height: 15px;
         }
 
-        /* section#content .list:not(:first-child) {
-        } */
-
         section#content .list {
             margin-top: 10px;
             padding-bottom: 10px;
             border-bottom: 0.5px solid #e6e6e6;
         }
 
-        /* section#content hr {
-            border: 0.5px solid #e6e6e6;
-            border-top: 0;
-        } */
+        section#content .list:last-child {
+            border: 0;
+        }
 
         .list h3 {
             margin: 0;
@@ -125,11 +109,6 @@
         a.link:hover {
             text-decoration: underline;
             text-decoration-color: #a3a3a3;
-        }
-
-        footer {
-            font-size: small;
-            margin-top: 10px;
         }
 
         #pagination {
@@ -143,6 +122,12 @@
 
         #created_at {
             float: right;
+        }
+
+        footer {
+            padding-top: 5px;
+            border-top: 1px solid #ccc;
+            font-size: small;
         }
 
         @media only screen and (min-width:640px) and (max-width:767px) {
@@ -244,24 +229,18 @@
                 </form>
             </div>
         </header>
-        <!-- <hr> -->
+
         <section id="content">
             <div class="list">
                 <h3 class="title">
                     &rarr; <a class="link" href="#">Judul Artikel</a>
                 </h3>
-                <!-- <span>Sedikit tulisan konten artikel</span><br>
-                <small><a class="link" href="#">Kategori</a> | <span>Tanggal</span></small> -->
             </div>
-            <!-- <hr> -->
             <div class="list">
                 <h3 class="title">
                     &rarr; <a class="link" href="#">Judul Artikel Dua</a>
                 </h3>
-                <!-- <span>Sedikit tulisan konten artikel</span><br>
-                <small><a class="link" href="#">Kategori</a> | <span>05 Des 2019</span></small> -->
             </div>
-            <!-- <hr> -->
         </section>
 
         <footer>
